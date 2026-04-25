@@ -34,7 +34,7 @@ const projects = [
     title: "Property Showcase Editing",
     category: "Commercial",
     desc: "A clean, cinematic property video highlighting space, design, and lifestyle to attract buyers.",
-    src: "public/Assests/4.mp4",
+    src: "/Assests/4.mp4",
     poster: "",
     tags: ["Sci-Fi", "Particles", "Compositing"],
   },
