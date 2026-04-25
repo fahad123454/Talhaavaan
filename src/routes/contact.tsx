@@ -4,21 +4,6 @@ import { z } from "zod";
 import { Mail, MapPin, Send, Instagram, Youtube, Twitter, CheckCircle2 } from "lucide-react";
 
 export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact — Talha Avaan VFX Editor" },
-      {
-        name: "description",
-        content:
-          "Have a project in mind? Get in touch with Talha Avaan to discuss VFX, editing and motion design.",
-      },
-      { property: "og:title", content: "Contact Talha Avaan" },
-      {
-        property: "og:description",
-        content: "Reach out to start a cinematic VFX project together.",
-      },
-    ],
-  }),
   component: ContactPage,
 });
 

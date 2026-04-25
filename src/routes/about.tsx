@@ -2,25 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Award, Film, Sparkles, Users, MapPin, Calendar } from "lucide-react";
 
 export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: "About — Talha Avaan, VFX Editor" },
-      {
-        name: "description",
-        content:
-          "Get to know Talha Avaan — a VFX editor with 7+ years crafting cinematic visuals for short films, music videos and brand campaigns.",
-      },
-      { property: "og:title", content: "About Talha Avaan" },
-      {
-        property: "og:description",
-        content: "VFX editor with 7+ years of cinematic storytelling experience.",
-      },
-      {
-        property: "og:image",
-        content: "/Assests/pfp/2.png",
-      },
-    ],
-  }),
   component: AboutPage,
 });
 

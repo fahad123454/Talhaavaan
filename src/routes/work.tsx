@@ -2,25 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import VideoPlayer from "@/components/ui/video-player";
 
 export const Route = createFileRoute("/work")({
-  head: () => ({
-    meta: [
-      { title: "Work — Talha Avaan VFX Showcase" },
-      {
-        name: "description",
-        content:
-          "Selected VFX, motion design and color grading work by Talha Avaan — short films, music videos, commercials and more.",
-      },
-      { property: "og:title", content: "Work — Talha Avaan VFX Showcase" },
-      {
-        property: "og:description",
-        content: "Selected cinematic VFX, motion and color projects.",
-      },
-      {
-        property: "og:image",
-        content: "https://images.unsplash.com/photo-1518930259200-3e5b4fdd8e29?w=1600&q=80",
-      },
-    ],
-  }),
   component: WorkPage,
 });
 

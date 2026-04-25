@@ -4,25 +4,6 @@ import { TestimonialStack, type Testimonial } from "@/components/ui/glass-testim
 import { Film, Wand2, Palette, Sparkles, Award, Clock } from "lucide-react";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Talha Avaan — Cinematic VFX Editor" },
-      {
-        name: "description",
-        content:
-          "Award-winning VFX editor blending cinematic storytelling with explosive visual effects. View showreel, services and selected work.",
-      },
-      { property: "og:title", content: "Talha Avaan — Cinematic VFX Editor" },
-      {
-        property: "og:description",
-        content: "Cinematic VFX, motion design and color grading for filmmakers worldwide.",
-      },
-      {
-        property: "og:image",
-        content: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=1600&q=80",
-      },
-    ],
-  }),
   component: Index,
 });
 
