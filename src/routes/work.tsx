@@ -34,7 +34,7 @@ const projects = [
     title: "Property Showcase Editing",
     category: "Commercial",
     desc: "A clean, cinematic property video highlighting space, design, and lifestyle to attract buyers.",
-    src: "/Assests/4.mp4",
+    src: "public/Assests/4.mp4",
     poster: "",
     tags: ["Sci-Fi", "Particles", "Compositing"],
   },
@@ -55,11 +55,11 @@ function WorkPage() {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-12">
+        <div className="mt-16 grid gap-10">
           {projects.map((project, i) => (
             <article
               key={project.title}
-              className={`grid gap-8 md:grid-cols-5 md:items-center ${
+              className={`grid gap-6 md:gap-8 md:grid-cols-5 md:items-center ${
                 i % 2 === 1 ? "md:[&>div:first-child]:order-2" : ""
               }`}
             >

@@ -118,11 +118,13 @@ export default function VideoPlayer({ src, poster, className }: VideoPlayerProps
       )}
       onMouseEnter={() => setShowControls(true)}
       onMouseLeave={() => setShowControls(false)}
+      onTouchStart={() => setShowControls(true)}
     >
       <video
         ref={videoRef}
         src={src}
         poster={poster}
+        preload="none"
         className="w-full h-full object-cover"
         onTimeUpdate={handleTimeUpdate}
         onClick={togglePlay}
